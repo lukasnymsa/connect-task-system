@@ -1,0 +1,8 @@
+/bin
+/obj
+/.idea
+/Data/*
+!/Data/.gitkeep
+/Tests/bin
+/Tests/obj
+/appsettings.local.json

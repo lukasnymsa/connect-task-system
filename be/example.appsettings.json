@@ -1,0 +1,46 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "Config": {
+    "TaskSystem": {
+      "YouTrack": {
+        "Url": "<api url>",
+        "Token": "<perm token>",
+        "ProjectIds": ["<ID 1>", "<ID 2>", "..."],
+        "MainProjectId": "<ID>",
+        "UserField": "<field>"
+      }
+    },
+    "ExpirationTimeMinutes": {
+      "RequestCodeTtl": 10,
+      "TokenTtl": 30
+    },
+    "States": {
+      "New": "Submitted",
+      "Open": "Open",
+      "InProgress": "In Progress",
+      "Processed": "Processed",
+      "Rejected": "Rejected",
+      "Retry": "Retry",
+      "Reopened": "Reopened",
+      "Resolved": "Resolved"
+    },
+    "MailSettings": {
+      "FromName": "<name>",
+      "FromMail": "<e-mail address>",
+      "Host": "<host>",
+      "Port": 587,
+      "Username": "<username>",
+      "Password": "<password>"
+    },
+    "Testing": {
+      "Email": "<OPTIONAL: testing e-mail address>",
+      "Token": "<OPTIONAL: token>"
+    }
+  }
+}
